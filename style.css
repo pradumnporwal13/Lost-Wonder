@@ -1,0 +1,161 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111111;
+
+}
+
+nav {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.628), #111111), url(https://cdn.pixabay.com/photo/2015/01/03/08/39/rupees-587271_1280.jpg);
+    background-size: cover;
+    height: 13vh;
+    padding: .5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    margin-top: .4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    color: red;
+    text-align: start;
+}
+
+@media (max-width:920px) {
+    nav h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-top: .6rem;
+    }
+}
+
+@media (max-width:760px) {
+    nav h1 {
+        font-size: 2.7rem;
+        font-weight: 300;
+        margin-top: .6rem;
+    }
+}
+
+nav button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    border: .1rem solid white;
+    background-color: transparent;
+    width: 15rem;
+    height: 3rem;
+    align-content: center;
+    margin-top: 1.5rem;
+    animation: both;
+    transition: all 700ms ease;
+}
+
+nav button:hover {
+    background: linear-gradient(rgb(255, 68, 0), rgb(255, 255, 255), rgb(0, 128, 0));
+    transform: scale(1.04);
+    color: rgb(5, 5, 91);
+    border-color: #111111;
+}
+
+nav button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav button a:hover {
+    color: rgb(5, 5, 91);
+}
+
+/* cards  */
+.cards {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.MonumentCard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+
+    /* width: 70px;
+    height: 40px; */
+    /* background-color: #fff; */
+    /* background-image: url(https://www.culturalindia.net/iliimages/Group-of-Monuments-at-Hampi-3.jpg); */
+}
+
+.MonumentCard img {
+    border-radius: 2rem;
+    position: relative;
+    right: -1.9rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.MonumentCard img:hover {
+    transform: scale(1.05);
+    border: .3rem solid white;
+}
+
+.Monument-Info {
+    margin-left: .1rem;
+    background-color: #fff;
+    text-align: left;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Monument-Info h4 {
+    font-size: 3rem;
+}
+
+.Monument-Info p {
+    font-size: 1.4rem;
+    color: rgb(92, 92, 92);
+}
+
+.WikipediaButton {
+    color: #fff;
+    background-color: skyblue;
+    width: 57.0em;
+    height: 2em;
+    border: 1px solid skyblue;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    position: relative;
+    bottom: 0%;
+    /* top: 13rem; */
+    transition: all 0.5s ease-in-out;
+}
+
+.WikipediaButton a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.WikipediaButton:hover {
+    border: 1px solid rgb(3, 63, 87);
+    background-color: rgb(3, 63, 87);
+}
